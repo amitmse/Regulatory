@@ -1,3 +1,10 @@
+![image](https://user-images.githubusercontent.com/10795158/134813212-15a471e7-ddba-44ea-818d-f1a33e7a8be5.png)
+
+![image](https://user-images.githubusercontent.com/10795158/134813225-bdcaf338-dccf-4e25-a80c-ffb15c254ed3.png)
+
+
+
+
 **Basel-I (1998)**
    - Published a set of minimum capital requirements for banks
    - It focused almost entirely on credit risk (default risk) - the risk of counter party failure.
@@ -143,6 +150,17 @@
       
       
       
-      
-      
+- **Stress RWA**:       
+   -  The Vasicek formula is used to convert the Base PDs (or ODRs in the case of standardized portfolios) into a stressed value that can be expected under 
+      the assumed severity of the scenario. Its part of pillar 1 stress testing 
+   -  Stress RWA calculation:
+         -  Target ODR: Average IFRS 9 PD 
+         -  Apply target ODR in Pillar-1 model (not for base year) to get the % a/c across delinquency bucket. Current bucket should be adjusted in the last (to get 100%)
+         -  Distribute base year delinquency wise accounts according to Pillar-1 adjusted accounts (#2). Apply same method for year 2 to 5. 
+         -  Post account movement adjust below
+               -  Score (A & B) : Difference of average score from one bucket to another. Convert score into TTC PD.
+               -  Calculate PMA (IRB PD by Target ODR) and apply on converted PD. Adjust PMA to get close to target ODR. PMA required for all years except base year
+               -  Recalculated LTV to adjust account movement
+               -  Calculate Capital requirement, RWA and Capital
+
       
