@@ -1,5 +1,3 @@
-https://www.openriskmanual.org/wiki/IFRS_9_versus_IRB_Models
-
 **International Financial Reporting Standards 9(IFRS 9)**
 
 - IFRS 9 is a financial reporting standard developed and approved by the International Accounting Standards Board (IASB), an independent, private-sector body 
@@ -8,7 +6,7 @@ https://www.openriskmanual.org/wiki/IFRS_9_versus_IRB_Models
   principles for the financial reporting of financial assets and liabilities that will present relevant and useful information to users of financial statements for 
   their assessment of the amounts, timing and uncertainty of an entity’s future cash flows. Alongside disclosures mandated by regulators 
   (e.g., Basel Pillar III reporting requires for regulated banks) these financial statements are the main source of information about the Balance Sheet of a financial
-  institution.
+  institution. https://www.openriskmanual.org/wiki/IFRS_9_versus_IRB_Models
 
 - IFRS 9 was issued in response to the mandate received from the G20 in the light of the performance of accounting standards during the global financial crisis. 
   The new standard specifies a fuller and more timely recognition of credit losses, thus enhancing both the size of loss-absorbing allowances and their responsiveness 
@@ -51,19 +49,16 @@ https://www.openriskmanual.org/wiki/IFRS_9_versus_IRB_Models
   either at an individual exposure level or a collective portfolio level (grouped exposures based on shared credit risk characteristics) 
   
 - Auditing of figures: Auditors and market supervisors.
-https://www.moodysanalytics.com/risk-perspectives-magazine/convergence-risk-finance-accounting-cecl/spotlight-cecl/ifrs-9-impairment-model-interaction-with-the-basel-framework
+  https://www.moodysanalytics.com/risk-perspectives-magazine/convergence-risk-finance-accounting-cecl/spotlight-cecl/ifrs-9-impairment-model-interaction-with-the-basel-framework
 
 - The expected credit loss is to be covered by provisions, and unexpected loss is to be covered by capital. As a consequence, loss provisions will 
   significantly increase under IFRS 9, thus reducing the equity and retained earnings available for Tier 1 capital, which in turn may reduce the Tier 1 capital ratio.
-
-https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2819101#:~:text=differences%20between%20the%20IFRS%209,whole%20term%20structure%20is%20needed).
+  https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2819101#:~:text=differences%20between%20the%20IFRS%209,whole%20term%20structure%20is%20needed).
 
 - In general A‐IRB loss estimation is an “economic loss”, whereas IFRS 9 loss estimation is an “accounting loss”. Indirect recovery expenses (e.g. overhead, etc.), 
   which are included in A‐IRB’s economic loss by being incorporated in LGD estimations, are supposed to be excluded from the IFRS 9 calculation as they cannot be 
-  directly allocated to individual loans from an accounting standpoint.
-
-https://www.openriskmanual.org/wiki/Category:BCBS_Basel_II
-https://www.openriskmanual.org/wiki/Category:BCBS_Basel_III
+  directly allocated to individual loans from an accounting standpoint. https://www.openriskmanual.org/wiki/Category:BCBS_Basel_II  
+  https://www.openriskmanual.org/wiki/Category:BCBS_Basel_III
 
 - International Accounting Standards Board (IASB) and the US Financial Accounting Standards Board (FASB) have adopted provisioning standards that require the use of 
   expected credit loss (ECL) models rather than incurred loss models. The IASB published International Financial Reporting Standard (IFRS) 9 in July 2014, which will 
@@ -75,8 +70,7 @@ https://www.openriskmanual.org/wiki/Category:BCBS_Basel_III
   models, and regulatory expected loss (EL) calculated under the internal ratings-based (IRB) approach in Basel III (regulatory EL). The high-level differences between 
   IFRS 9, CECL and regulatory EL are described in Annex 1. The IRB regulatory EL estimates use a 12-month PD. IFRS 9 uses a 12-month PD in Stage 1 and a lifetime PD 
   in Stages 2 and 3. The CECL model uses a lifetime PD for all assets without regard to stages. https://www.bis.org/bcbs/publ/d385.pdf 
-
-https://testbacblog.files.wordpress.com/2018/06/click-here-to-access-moodys-detailed-report.pdf
+  https://testbacblog.files.wordpress.com/2018/06/click-here-to-access-moodys-detailed-report.pdf
 
 - Adapting the Basel II advanced internalratings-based models for International Financial Reporting Standard 9. -> 
   In general, A-IRB loss estimation is an “economic loss”, whereas IFRS 9 loss estimation is an “accounting loss”. 
@@ -93,9 +87,9 @@ https://testbacblog.files.wordpress.com/2018/06/click-here-to-access-moodys-deta
   - A single threshold of 3.5% absolute and 100% relative difference broadly satisfies the criteria for all portfolios except low default portfolio. 
     For low risk unsecured portfolio: a higher threshold is needed to ensure high flow rate of accounts from Stage 2 to Stage 3 
 
-- Stress testing: https://www.bis.org/publ/bcbs147.pdf Its part of Second Pillar - Supervisory Review Process. Stress testing is an important risk management tool 
+- Stress testing: Its part of Second Pillar - Supervisory Review Process. Stress testing is an important risk management tool 
   that is used by banks as part of their internal risk management and, through the Basel II capital adequacy framework, is promoted by supervisors. 
-  Providing forward-looking assessments of risk; 
+  Providing forward-looking assessments of risk;
   - overcoming limitations of models and historical data; 
   - supporting internal and external communication; 
   - feeding into capital and liquidity planning procedures; 
@@ -104,7 +98,7 @@ https://testbacblog.files.wordpress.com/2018/06/click-here-to-access-moodys-deta
     The IFRS 9 models that have been built to estimate each portfolio’s IFRS 9 ECL under multiple economic scenarios; and
     The Pillar 1 stress testing frameworks that have been built to estimate the regulatory RWA and EL under different economic scenarios for the IRB portfolios. 
     These models are combined in the portal with the Business Volumes and Margins (estimates each portfolio’s balance sheet growth over the scenario) to 
-    calculate the portfolio’s loan impairments, IFRS 9 ECL, regulatory RWA and EL over the scenario(s).
+    calculate the portfolio’s loan impairments, IFRS 9 ECL, regulatory RWA and EL over the scenario(s). https://www.bis.org/publ/bcbs147.pdf
 
 - Retail Pillar 1 stress test framework: For IRB portfolios the framework is designed to estimate the RWA and EL for a given scenario. 
   This is done by simulating how the key components of the rating system (that have a material impact on RWA) would react to a stress scenario. 
