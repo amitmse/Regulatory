@@ -2,26 +2,48 @@ https://www.openriskmanual.org/wiki/IFRS_9_versus_IRB_Models
 
 **International Financial Reporting Standards 9(IFRS 9)**
 
-ECLs reflect management’s expectations of shortfalls in the collection of contractual cash flows.
+- IFRS 9 is a financial reporting standard developed and approved by the International Accounting Standards Board (IASB), an independent, private-sector body 
+  that develops and approves International Financial Reporting Standards. IFRS 9 concerns the accounting and reporting specifically of financial instruments. 
+  The standard is applicable for annual periods beginning on or after 1 January 2018 while earlier application is permitted. The objective of IFRS 9 is to establish 
+  principles for the financial reporting of financial assets and liabilities that will present relevant and useful information to users of financial statements for 
+  their assessment of the amounts, timing and uncertainty of an entity’s future cash flows. Alongside disclosures mandated by regulators 
+  (e.g., Basel Pillar III reporting requires for regulated banks) these financial statements are the main source of information about the Balance Sheet of a financial
+  institution.
 
-IFRS 9 is a financial reporting standard developed and approved by the International Accounting Standards Board (IASB), an independent, private-sector body that develops and approves International Financial Reporting Standards. IFRS 9 concerns the accounting and reporting specifically of financial instruments. The standard is applicable for annual periods beginning on or after 1 January 2018 while earlier application is permitted. The objective of IFRS 9 is to establish principles for the financial reporting of financial assets and liabilities that will present relevant and useful information to users of financial statements for their assessment of the amounts, timing and uncertainty of an entity’s future cash flows. Alongside disclosures mandated by regulators (e.g. Basel Pillar III reporting requires for regulated banks) these financial statements are the main source of information about the Balance Sheet of a financial institution.
+- IFRS 9 was issued in response to the mandate received from the G20 in the light of the performance of accounting standards during the global financial crisis. 
+  The new standard specifies a fuller and more timely recognition of credit losses, thus enhancing both the size of loss-absorbing allowances and their responsiveness 
+  to information pointing to a deterioration or improvement in credit risk.
 
-IFRS 9 was issued in response to the mandate received from the G20 in the light of the performance of accounting standards during the global financial crisis. The new standard specifies a fuller and more timely recognition of credit losses, thus enhancing both the size of loss-absorbing allowances and their responsiveness to information pointing to a deterioration or improvement in credit risk.
+- The introduction of the IFRS 9 standard has significant repercussions for bank Risk Management as it requires:
+  - Embedding forward looking risk assessments in the measurement (assessment) of the firm's financial condition
+  - Disclosing such assessments to external stakeholders
 
-The introduction of the IFRS 9 standard has significant repercussions for bank Risk Management as it requires:
+- ECLs reflect management’s expectations of shortfalls in the collection of contractual cash flows.
+- While the transition to the ECL approach requires a significant investment in new models, the adoption of IFRS 9 could benefit banks by improving their internal 
+  credit risk monitoring systems. While banks currently using the advanced internal ratings-based approach (IRB) to establish their capital requirements can adjust 
+  their models, banks solely using the standardised approach (SA) to determining their capital requirements may need to develop models from scratch
 
-·        Embedding forward looking risk assessments in the measurement (assessment) of the firm's financial condition
-
-·        Disclosing such assessments to external stakeholders
-
-While the transition to the ECL approach requires a significant investment in new models, the adoption of IFRS 9 could benefit banks by improving their internal credit risk monitoring systems. While banks currently using the advanced internal ratings-based approach (IRB) to establish their capital requirements can adjust their models, banks solely using the standardised approach (SA) to determining their capital requirements may need to develop models from scratch
-
-The standard contains four main sections:
-
-Recognition and Derecognition: (Initial) recognition denotes the first inclusion of an asset or liability in financial reporting. Reporting entities must recognise a financial asset or a financial liability in its statement of financial position when, and only when, the entity becomes party to the contractual provisions of the instrument (e.g. when originating or purchasing an asset). Derecognition denotes the exclusion of an asset or liability from reporting when when the contractual rights to the cash flows from the financial asset expire, or the reporting entity transfers the financial asset
-Classification: Recognition of financial assets and liabilities requires their classification into one of the three available categories (Amortized Cost, FVOCI, FVPL) which subsequently determines how the financial asset or liability is measured and reported in financial statements.
-Measurement: IFRS 9 retained the concept of fair value option from IAS 39, but revised the criteria for financial assets. Under a fair value option, an asset or liability that would otherwise be reported at amortized cost or FVOCI can use FVPL instead. IFRS 9 retained most of the measurement guidance for liabilities from IAS 39, meaning most financial liabilities are held at amortized cost. Under IFRS 9 measurement involves assigning each asset to one of three stages, depending on the relative change in its credit risk. The stage determines principally: 1. the way in which the impairment loss is calculated, 2. whether the accrual of interest income is made on the basis of the gross or net carrying amount of the financial asset.
-Impairment Loss: One of the most important changes brought by the IFRS 9 standard is the requirement for an Impairment Allowance held against the amortized cost of financial assets. The change in this allowance is to be reported in profit and loss. This new impairment model is intended to address a criticism of the existing impairment model which allows companies to delay recognition of asset impairments. For most amortized cost assets, when the asset is acquired the impairment allowance is to be measured as the present value of credit losses from default events projected over the next 12 months. The allowance remains based on the Expected Credit Loss from defaults over the next 12 months unless there is a Significant Increase in Credit Risk. If there is a significant increase in credit risk, the allowance is measured as the present value of all credit losses projected for the instrument over its full lifetime. If the credit risk of the asset improves, the allowance can once again be revert to the projected credit losses over the next 12 months.
+- The standard contains four main sections:
+  - Recognition and Derecognition: (Initial) recognition denotes the first inclusion of an asset or liability in financial reporting. 
+    Reporting entities must recognise a financial asset or a financial liability in its statement of financial position when, and only when, 
+    the entity becomes party to the contractual provisions of the instrument (e.g. when originating or purchasing an asset). 
+    Derecognition denotes the exclusion of an asset or liability from reporting when when the contractual rights to the cash flows from the financial asset expire, 
+    or the reporting entity transfers the financial asset
+  - Classification: Recognition of financial assets and liabilities requires their classification into one of the three available categories 
+   (Amortized Cost, FVOCI, FVPL) which subsequently determines how the financial asset or liability is measured and reported in financial statements.
+  - Measurement: IFRS 9 retained the concept of fair value option from IAS 39, but revised the criteria for financial assets. Under a fair value option, an asset or
+   liability that would otherwise be reported at amortized cost or FVOCI can use FVPL instead. IFRS 9 retained most of the measurement guidance for liabilities 
+   from IAS 39, meaning most financial liabilities are held at amortized cost. Under IFRS 9 measurement involves assigning each asset to one of three stages, 
+   depending on the relative change in its credit risk. The stage determines principally: 1. the way in which the impairment loss is calculated, 2. 
+   whether the accrual of interest income is made on the basis of the gross or net carrying amount of the financial asset.
+  - Impairment Loss: One of the most important changes brought by the IFRS 9 standard is the requirement for an Impairment Allowance held against the amortized 
+   cost of financial assets. The change in this allowance is to be reported in profit and loss. This new impairment model is intended to address a criticism of 
+   the existing impairment model which allows companies to delay recognition of asset impairments. For most amortized cost assets, when the asset is acquired 
+   the impairment allowance is to be measured as the present value of credit losses from default events projected over the next 12 months. 
+   The allowance remains based on the Expected Credit Loss from defaults over the next 12 months unless there is a Significant Increase in Credit Risk. 
+   If there is a significant increase in credit risk, the allowance is measured as the present value of all credit losses projected for the instrument 
+   over its full lifetime. If the credit risk of the asset improves, the allowance can once again be revert to the projected credit losses over the next 12 months.
+   
 Expected Credit Loss (ECL) is the probability-weighted estimate of credit losses (i.e., the present value of all cash shortfalls) over the expected life of a Financial Instrument. A cash shortfall is the difference between the cash flows that are due to an entity in accordance with the contract (scheduled or contractual cashflows) and the cash flows that the entity expects to receive (actual expected cashflows). Because expected credit losses consider the amount and timing of payments, a credit loss arises even if the entity expects to be paid in full but later than when contractually due. ECL can be measured either at an individual exposure level or a collective portfolio level (grouped exposures based on shared credit risk characteristics)
 Auditing of figures: Auditors and market supervisors.
 https://www.moodysanalytics.com/risk-perspectives-magazine/convergence-risk-finance-accounting-cecl/spotlight-cecl/ifrs-9-impairment-model-interaction-with-the-basel-framework
