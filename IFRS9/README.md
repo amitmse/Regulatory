@@ -251,4 +251,5 @@
      - Regulatory Capital Reform Overlay
      - Capital Action- Capital Raising plans 
 
+![IFRS9 vs CECL](https://user-images.githubusercontent.com/10795158/134813081-b7a207cb-8e32-441a-b3f5-24b8b7c6ce69.jpg)
 
