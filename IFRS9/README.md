@@ -83,7 +83,7 @@ https://testbacblog.files.wordpress.com/2018/06/click-here-to-access-moodys-deta
   The downturn LGD adjustment used in A-IRB is not appropriate for IFRS 9, as it is an adjustment for the tail of the loss distribution to compensate 
   for the fact that the Basel II formula ignores the correlations between the PD and LGD.
 
-- SICR:
+- Significant Increase in Credit Risk (SICR):
   - MG: The analysis is based on simulating the portfolio for a range of triggers: absolute triggers from 0-15% and relative triggers from 0-500%.
   - For non-mortgage portfolios:
           (i) A minimum flow from Stage 2 to Stage 3 over the next 12 months of 25%
