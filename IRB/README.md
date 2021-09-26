@@ -46,7 +46,7 @@
 
 ![image](https://user-images.githubusercontent.com/10795158/134806231-7332178b-7ee5-4f98-8dce-89f0bc1da3bc.png)
 
-- Loss: The IRB approach is based on measures of unexpected losses (UL) and expected losses (EL). The risk-weight functions produce capital requirements for the UL portion. 
+- **Loss**: The IRB approach is based on measures of unexpected losses (UL) and expected losses (EL). The risk-weight functions produce capital requirements for the UL portion. 
   In cases where an IRB treatment is not specified, the risk weight for those other exposures is 100% and the resulting risk-weighted assets are assumed to represent UL only.
   Banks must calculate an EL as PD x LGD for corporate, sovereign, bank, and retail exposures not in default. Expected losses are treated separately. 
   While it is never possible to know in advance the losses a bank will suffer in a particular year, a bank can forecast the average level of credit losses it can reasonably
@@ -62,7 +62,7 @@
 
 
 
-- Capital requirement ( K ): Supervisors will require the bank to calculate its regulatory capital requirement as the sum of expected loss (EL) and unexpected loss (UL).
+- **Capital requirement ( K )**: Supervisors will require the bank to calculate its regulatory capital requirement as the sum of expected loss (EL) and unexpected loss (UL).
   The total capital ratio must be no lower than 8%. Tier 2 capital is limited to 100% of Tier 1 capital. Banks have an incentive to minimise the capital they hold, 
   because reducing capital frees up economic resources that can be directed to profitable investments. On the other hand, the less capital a bank holds, 
   the greater is the likelihood that it will not be able to meet its own debt obligations, i.e. that losses in a given year will not be covered by profit plus 
@@ -94,12 +94,14 @@
     - The difference of the downturn LGD and the best estimate of EL represents the UL capital charge for defaulted assets.  
     - K (in SAS) = LGD*(probnorm((1-R)**(-0.5)*probit(buffer PD long run)+(R/(1-R))**(0.5)*probit(0.999))-buffer PD long run)
 
+![image](https://user-images.githubusercontent.com/10795158/134807706-fff2b48f-0bec-47d4-867b-97178731bd9a.png)
 
-- Risk-weighted assets: 
+
+- **Risk-weighted assets**: 
     - Non-Default = K x 12.5 x EAD*1.06       (12.5% is reciprical of 8%, effectively: 8% * 12.5% = 1.0)
     - Default     = K x 12.5 x EAD            (K = Max ((Downturn LGD with floor – BE LGD without floor), 0)
 
-- Asset Correlation ( R ):
+- **Asset Correlation ( R )**:
     - Residential mortgage exposures : 15%
     - Revolving retail exposures : 4%
     - Other retail exposures : 0.12 × (1 - EXP(-50 × PD)) / (1 - EXP(-50)) + 0.24 × [1 - (1 - EXP(-50 × PD))/(1 - EXP(-50))]
@@ -117,7 +119,7 @@
       with each other with this single factor. Correlation is a single factor which reflects how the various obligors in the market are related to each other. 
       Basel II accord uses the different correlation for different assets to assess the capital requirement though they are prematurely fixed depending on the kind of assets.
 
-- PIT PD vs TTC PD: 
+- **PIT PD vs TTC PD**: 
     - Basel II introduced the concept of a long-run PD, which is commonly associated with the expected default rates over a period of time covering at least an economic cycle.
       The introduction of this concept has major modelling implications that have to be addressed while considering each bank environment and constraints. 
     - Best practices: A firm must estimate PDs by grade from long-run averages of 1 year default rates. The long-run average must include default rates from a representative 
