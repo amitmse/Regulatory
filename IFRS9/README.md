@@ -2,7 +2,7 @@ https://www.openriskmanual.org/wiki/IFRS_9_versus_IRB_Models
 
 
 
-International Financial Reporting Standards(IFRS)
+**International Financial Reporting Standards(IFRS)**
 ECLs reflect management’s expectations of shortfalls in the collection of contractual cash flows.
 
 IFRS 9 is a financial reporting standard developed and approved by the International Accounting Standards Board (IASB), an independent, private-sector body that develops and approves International Financial Reporting Standards. IFRS 9 concerns the accounting and reporting specifically of financial instruments. The standard is applicable for annual periods beginning on or after 1 January 2018 while earlier application is permitted. The objective of IFRS 9 is to establish principles for the financial reporting of financial assets and liabilities that will present relevant and useful information to users of financial statements for their assessment of the amounts, timing and uncertainty of an entity’s future cash flows. Alongside disclosures mandated by regulators (e.g. Basel Pillar III reporting requires for regulated banks) these financial statements are the main source of information about the Balance Sheet of a financial institution.
