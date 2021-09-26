@@ -161,3 +161,94 @@
 - Climate Risk: weather change, increase temp, Flood, sea level rise, Land valuation fall and customer defaults, Industry file bankruptcy, 
   Portfolio become risky, Increase in carbon price, Remedy: Choose low levels of climate risk, Avoid Extreme risks, reinsurance,
   Page 4  https://www.wellsfargoassetmanagement.com/assets/public/pdf/insights/investing/climate-changes-impact-on-global-banks-a-matter-of-degrees.pdf
+
+
+**Formula**:
+
+  - PD_PIT_1 = exp(PD_contribution)/(1+exp(PD_contribution));
+  - PD_cumulative_1 = PD_PIT_1;
+  - PD_mrginal_1 = PD_PIT_1;			
+  - PD_cumulative_2 = PD_cumulative_1 + (1-PD_cumulative_1) * PD_PIT_2;
+  - PD_mrginal_2 = PD_cumulative_2 - PD_cumulative_1;
+  - ECL = PD_mrginal * LGD * EAD * Discount Factor                         
+    - DISCOUNT_FACTOR = 1/((1 + EIR) ** (average_time_to_default- 1))
+    - Life Time ECL = Life TIme ECL (preyious) + ECL
+  - Loan Impairments/ECL Charge : ECL current year minus ECL previous year
+  - LifeTime PD: MEAN(of PD_PIT_1  - PD_PIT_10);
+  - LifeTime ECL: SUM (of ECL_PIT_1 - ECL_PIT_10);
+  - PD Difference: abs(LifeTime PD 	- PD Origination);
+  - PD Relative Change: PD Difference 	/ PD Origination;
+  - Stage 3: Default
+  - Stage 2: 
+    - Hardstop: 30 /60 DPD
+    - For "Current / X DPD": PD Difference > 5% and PD Relative Change > 1
+  - Stage 1: Current / X DPD
+  - Stage wise ECL:
+    - Stage 1: Sum of stage one from current and X-DPD bucket 
+      - Stage 1 for current	= 12months ECL -(12months ECL * %of Current 	Population in Stage 2)
+      - Stage 1 for X DPD		= 12months ECL -(12months ECL * %of X DPD 		Population in Stage 2)
+    - Stage 2: Sum of stage two from 60,30,X DPD & current 
+      - Stage 2 for 30/60 DPD = Lifetime ECL
+		  - Stage 2 for X DPD		= Lifetime ECL * %of X DPD 		Population in Stage 2
+		  - Stage 2 for current	= Lifetime ECL * %of Current 	Population in Stage 2
+    - Stage 3: Sum of stage three for defaulted (Lifetime ECL)
+
+- EAD:
+  - For MG: max( 0, mort(., Installment Amount, Interest Rate / 1200, Remaining Tenor))
+  - For Unsecured: minimum (Balance at observation + IIUR * Limit, Limit) Where IIUR is the Increase in Utilisation Rate for each EAD segment.
+
+- Current Market Value (CMV) : (PPI at Current Time / PPI when last time valued) * Property Value when last time evaluated
+- Loan to Value (LTV): Outstanding / CMV
+- LGD: LGD Loss / EAD
+
+- BCBS: Stress testing is an important risk management tool that is used by banks as part of their internal risk management and, 
+  through the Basel II capital adequacy framework, is promoted by supervisors. Stress testing alerts bank management to adverse unexpected outcomes related 
+  to a variety of risks and provides an indication of how much capital might be needed to absorb losses should large shocks occur (https://www.bis.org/publ/bcbs147.pdf)
+   - Providing forward-looking assessments of risk
+   - Overcoming limitations of models and historical data
+   - Supporting internal and external communication
+   - Feeding into capital and liquidity planning procedures
+   - Informing the setting of a bank's risk tolerance
+   - Facilitating the development of risk mitigation or contingency plans across a range of stressed conditions.
+
+- ICAAP is only for EU. ICAAP is responsibility of each institution in its design, implementation and maintenance, where the design should be fully specified with 
+  the capital policy being fully documented. In the case of larger or more complex institutions it may be needed stress and scenario testing frameworks. 
+  Capital Adequacy was the principal message of the Basel II framework. Under Pillar 2 of the Basel II Accord, ICAAP was introduced.
+   - Identify, measure and monitor the risks that an institution is exposed to
+   - Hold an internal capital in relation to the risk profile of the institution
+   - Use and develop risk management systems
+   - The capital ratio is defined as the ratio between the regulatory capital and the total sum of risk weighted assets.
+   - In the foundation approach, the value LGD is in the range between 45% and 75% for unsecured claims.
+
+    - Under ICAAP requirements a bank needs to have in place internal procedures and processes to ensure that it possesses adequate capital resources in the long term 
+      to cover all of its material risks. 
+    - All risks that are material to the bank need to be quantified and stress tested and the relevant procedures for carrying out this assessment, the results and 
+      additional or target capital requirements that are commensurate with the bank’s risk profile and control environment would need to be communicated through an ICAAP
+      document firstly to the board of directors and then to the supervisor and the market. Supervisors would evaluate the ICAAP report to see how well banks were assessing
+      their capital needs in relation to their risks. They would expect banks to operate above and hold more than the minimum capital requirements.												
+
+  - ICAAP objectives:
+      - Identifying and measuring all material risks
+      - Ensuring the integrity of internal capital adequacy assessments
+      - Ensuring Bank’s Capital  solvency during stressed periods
+      - Setting and assessing internal capital adequacy goals that relate directly to risk
+
+  - Required action: 
+     - Understand regulatory and internal capital requirements and assess capital needs to support the risk profile over the entire ICAAP time horizon (1 year) and 
+        under different circumstances (normal & stressed)
+     - Define internal capital targets (target capital ratios)
+     - Demonstrate ability to plan and manage to internal capital targets and required regulatory capital ratios (10% of total RWA)
+     - Hold capital above minimum risk-based capital levels, commensurate with individual risk profile, to account for all material risks
+     - Justify the appropriateness of a bank’s overall capital level
+     - Develop expertise for periodic submission of ICAAP to regulator
+
+  - ICAAP Operating Model:
+     - Basel II Pillar II requires institutions to implement an ICAAP that establishes a periodic capital adequacy assessment
+     - Identify Material Risks Impacting Capital
+     - Capital Forecasting & Enterprise Stress Testing
+     - Regulatory Capital Forecast & Stress Test. Economic Capital Forecast & Stress Test
+     - Capital Adequacy Goals and Assessment: Results vs. capital adequacy minimums and targets
+     - Regulatory Capital Reform Overlay
+     - Capital Action- Capital Raising plans 
+
+
