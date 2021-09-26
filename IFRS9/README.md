@@ -2,7 +2,7 @@ https://www.openriskmanual.org/wiki/IFRS_9_versus_IRB_Models
 
 
 
-**International Financial Reporting Standards(IFRS)** /n
+**International Financial Reporting Standards(IFRS)**
 
 ECLs reflect management’s expectations of shortfalls in the collection of contractual cash flows.
 
