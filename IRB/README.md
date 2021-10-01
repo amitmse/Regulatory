@@ -163,4 +163,64 @@
                -  Recalculated LTV to adjust account movement
                -  Calculate Capital requirement, RWA and Capital
 
-      
+-  Long Run Probability of Default (LRPD) model covers three key categories:
+   -  PD Model Development: Model uses months on book, product, delinquency status, and scorecards as segment. Next, the initial PD is estimated using credit 
+      scores based on period of at least five years of data. The model is calibrated by mapping the available credit scores to estimates of the probability of 
+      default using logistic regression. An additional risk driver maybe included to capture additional risk perspective, if required.
+   -  Identify Deficiencies and Apply Adjustment: Assessment is made to identify deficiencies category A and B; 
+      and apply the appropriate adjustments to correct the deficiencies during modelling.
+   -  LRPD Calibration & Cyclicality Assessment: Once the initial PD model is built, a long-run adjustment factor is applied to calibrate the initial PD estimates 
+      to long-run average ODR that covers a full economic cycle.
+
+-  Afterwards, an assessment is performed to understand the cyclicality of PD model rating system between the Through-the-Cycle (TTC) and Point-in-Time (PiT) spectrum. 
+   If the historical data does not sufficiently cover the long-run period, and adjustment might be required, including imputing PRA’s 30% cyclicality cap for 
+   the long-run average default rate period that includes period of missing ODR
+
+-  Margin of Conservatism (MoC): Finally, MoC is added to the final model estimates to account for i) the uncertainties arising from adjustments made to correct 
+   the deficiencies, or ii) general estimation error (category C).
+
+-  ascore var:Product Type, Purchase Type,Employment Type (Primary borrower),Employment Type (Co-borrower),Length of Employment,Tenor,Age at Maturity,
+   Property Risk Type,Gender,LTV,DIR.
+
+-  bscore var: Card Usage Behaviour,CMV / Original Valuation,Current Card Delinquency,District,Housing Type,Joint Account Flag,Mortgage Delinquency in past 12 months,
+   Net Cash Balance,Net Current Loan-to-valuation Ratio, Net Worth (continuous),Unsecured Outstanding to Income Ratio
+
+-  LRPD model is considered following hybrid rating philosophy given that the LRPD estimates are derived based on i) credit scorecards which may include 
+   Point-in-Time (PIT) elements i.e. recent delinquency, current LTV; and ii) calibrated to long-run average default rate over the cycle (TTC) in nature. 
+   The resulting PD model is assessed against cyclicality requirements and incorporate further adjustments if required. The LRPD model aims to provide a 
+   relatively stable PD estimate over the cycle when compared to the observed default rates that are cyclical by nature. This means that the RWA and 
+   Expected Loss (EL) are expected to be relatively stable over the course of the business cycle. The consequence of this approach is that, 
+   we can expect the PD estimates to under or overpredict the observed default rates, depending on whether the economic is under recessionary or benign condition. 
+
+-  Fixed PD: a constant value of PD is assigned to each obligor. The PD is often based directly on the observed default rate (ODR) in that segment. 
+   This constant PD could be equal to:
+      -  The development sample ODR: i.e. (number of default)/ (sample size).
+      -  Simple average of yearly ODRs: This definition is akin to PRAs definition of long run average default which it stipulates to be the simple arithmetic 
+         average of yearly ODRs. Two snapshots with different sample sizes will get the same weight (unlike in method (a) which is equivalent to taking weighted 
+         average of yearly ODRS with weight equal to sample size). Each year getting an equal weight results in each economic scenario getting weighted 
+         proportional to its frequency of occurrence. Completely disregarding the sample size however might result in higher than optimal standard errors 
+         on the PD estimates.
+     -   Maximum observed ODR: This is a conservative approach where the ODR from the snapshot with worst performance is attached as PD. 
+     -   A PD value derived from another similar segment. For e.g. for an unscored segment, the PD could be taken from the corresponding scored segment 
+         with appropriate conservatisms applied.
+
+-  LRPD =L^(-1) (L(Initial PD )+c)    L(p)=log⁡(p)-log⁡(1-p), c=L⁡(ODR_LR )-L⁡(ODR_dev )
+   LRPD =(Initial PD) /{(1-K)*(Initial PD) + K} K=1/exp⁡(c), K={(1-ODR_LR)/(ODR_LR)}/{(1-ODR_dev)/(ODR_dev)}
+-  Cyclicality% = {{(PD(t) - PD(t-1)}/{(DR(t) - DR(t-1)}}*100 
+   Cyclicality% = {{PD - PD (previous period)] / {ODR - ODR(previous period)}} * 100
+   30% is cut-off for Cyclicality
+   PD(t) is long-run average PD at time t, 
+   DR(t) is observed default rate at time t 
+   L(PD_t )-L(PD_(t-1) )= α + β*(L(DR_t )-L(DR(t-1) ))
+   
+-  PD Adjustment factor computation: 
+      -  Q1 -> ODR=0.023%, adjustment L1= LOG(odr)-LOG(1-odr) = -8.37
+      -  Q2 -> ODR=0.062%, adjustment L2= LOG(odr)-LOG(1-odr) = -7.38
+      -  Adjustment Factor (c) = L(2)-L(1) = 0.994
+
+-  Neutral score for a particular variable has been calculated by removing this variable’s contribution and then passing the rest of the variables as 
+   an offset and running an intercept model to capture the average impact of the variable removed in the intercept.
+   
+-  Correlation: Interval/Ratio: Pearson, Ordinal: Spearman, Binary: Point Biserial
+
+
