@@ -204,14 +204,18 @@
      -   A PD value derived from another similar segment. For e.g. for an unscored segment, the PD could be taken from the corresponding scored segment 
          with appropriate conservatisms applied.
 
--  LRPD =L^(-1) (L(Initial PD )+c)    L(p)=log⁡(p)-log⁡(1-p), c=L⁡(ODR_LR )-L⁡(ODR_dev )
-   LRPD =(Initial PD) /{(1-K)*(Initial PD) + K} K=1/exp⁡(c), K={(1-ODR_LR)/(ODR_LR)}/{(1-ODR_dev)/(ODR_dev)}
--  Cyclicality% = {{(PD(t) - PD(t-1)}/{(DR(t) - DR(t-1)}}*100 
-   Cyclicality% = {{PD - PD (previous period)] / {ODR - ODR(previous period)}} * 100
-   30% is cut-off for Cyclicality
-   PD(t) is long-run average PD at time t, 
-   DR(t) is observed default rate at time t 
-   L(PD_t )-L(PD_(t-1) )= α + β*(L(DR_t )-L(DR(t-1) ))
+-  LRPD:
+      -  L^(-1) (L(Initial PD )+c)    
+      -  L(p)=log⁡(p)-log⁡(1-p), c=L⁡(ODR_LR )-L⁡(ODR_dev )
+      -  LRPD =(Initial PD) /{(1-K)*(Initial PD) + K} K=1/exp⁡(c), K={(1-ODR_LR)/(ODR_LR)}/{(1-ODR_dev)/(ODR_dev)}
+
+-  L(PD_t )-L(PD_(t-1) )= α + β*(L(DR_t )-L(DR(t-1) ))
+   
+-  Cyclicality% = {{PD - PD (previous period)] / {ODR - ODR(previous period)}} * 100
+      -  {{(PD(t) - PD(t-1)}/{(DR(t) - DR(t-1)}}*100 
+      -  30% is cut-off for Cyclicality
+      -  PD(t) is long-run average PD at time t, 
+      -  DR(t) is observed default rate at time t 
    
 -  PD Adjustment factor computation: 
       -  Q1 -> ODR=0.023%, adjustment L1= LOG(odr)-LOG(1-odr) = -8.37
@@ -221,6 +225,9 @@
 -  Neutral score for a particular variable has been calculated by removing this variable’s contribution and then passing the rest of the variables as 
    an offset and running an intercept model to capture the average impact of the variable removed in the intercept.
    
--  Correlation: Interval/Ratio: Pearson, Ordinal: Spearman, Binary: Point Biserial
+-  Correlation: 
+      -  Interval/Ratio: Pearson
+      -  Ordinal: Spearman
+      -  Binary: Point Biserial
 
 
